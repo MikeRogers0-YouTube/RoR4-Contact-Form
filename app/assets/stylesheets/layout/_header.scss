@@ -1,0 +1,30 @@
+#header {
+  overflow: hidden;
+}
+
+.branding{
+  float: left;
+
+  margin: 1em 0;
+}
+
+.primary_nav {
+  float: right;
+  overflow: hidden;
+  padding: 0;
+  margin: 1em 0;
+  
+  li {
+    list-style: none;
+    float: left;
+
+    padding: 0 1em;
+
+    &:first-child{
+      padding-left: 0;
+    }
+    &:last-child{
+      padding-right: 0;
+    }
+  }
+}

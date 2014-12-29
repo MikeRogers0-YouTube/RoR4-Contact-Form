@@ -6,9 +6,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="container">
+    <%= render 'shared/header' %>
 
-<%= yield %>
+    <%= yield %>
 
-<%= javascript_include_tag 'application' %>
+  </div>
+
+  <%= include_jquery env: :production %>
+  <%= javascript_include_tag 'application' %>
 </body>
 </html>

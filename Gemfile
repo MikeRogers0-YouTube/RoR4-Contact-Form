@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 
 # Stuff I added that I think we'll need
+
+# Server jQuery from a CDN.
+gem 'jquery-cdn', '2.1.3'
+
 group :development do
   # Opens outgoing emails in browser
   #gem 'letter_opener'
@@ -12,6 +16,15 @@ group :development, :test do
 
   # Lets you jump around time, useful for testing time based bits.
   #gem 'timecop'
+
+  # capybara's - for acceptance testing.
+  gem 'capybara'
+  gem 'capybara-email'
+  gem 'launchy' # lets me use 'save_and_open_page' method
+
+  # To test features with JS, use the webkit driver. 
+  # Requires QT (can be installed via brew) https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit
+  #gem 'capybara-webkit'
 end
 
 # Rails Default stuff that I kept in because it's useful.
