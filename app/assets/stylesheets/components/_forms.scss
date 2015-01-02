@@ -5,12 +5,20 @@
   }
 
   label {
+    display: inline-block;
     padding-right: 0.5em;
+    width: 80px;
     &:after{
       content: ':'
     }
   }
 
   .actions {
+  }
+}
+
+.field_with_errors {
+  input, textarea {
+    border: 1px solid #EF4F4F;
   }
 }
