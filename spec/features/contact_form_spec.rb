@@ -10,6 +10,13 @@ feature 'Contact Form' do
     # go to the page
     visit contact_us_path
 
+    # Submit form with no data
+    within 'form.user-form' do
+      click_on 'Submit'
+    end
+
+    expect(page).to have_css 'form.user-form .field_with_errors'
+
     # Fill in the form
     within 'form.user-form' do
       fill_in 'Name', with: 'John Doe'
