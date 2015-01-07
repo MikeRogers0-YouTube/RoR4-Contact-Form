@@ -1,12 +1,12 @@
 <%= form_for @contact_form, url: submit_form_contact_us_path, html: { class: 'user-form' }  do |f| %>
   <div>
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, required: true %>
   </div>
 
   <div>
     <%= f.label :email %>
-    <%= f.email_field :email %>
+    <%= f.email_field :email, required: true %>
   </div>
 
   <div class="honeypot">
@@ -16,7 +16,7 @@
 
   <div>
     <%= f.label :message %>
-    <%= f.text_area :message %>
+    <%= f.text_area :message, required: true %>
   </div>
 
   <div class="actions">
