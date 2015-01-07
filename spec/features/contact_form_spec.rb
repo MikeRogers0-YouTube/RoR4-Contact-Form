@@ -19,9 +19,9 @@ feature 'Contact Form' do
 
     # Fill in the form
     within 'form.user-form' do
-      fill_in 'Name', with: 'John Doe'
-      fill_in 'Email', with: 'test@example.com'
-      fill_in 'Message', with: 'Apple peanut butter'
+      fill_in 'Your Name', with: 'John Doe'
+      fill_in 'Your Email', with: 'test@example.com'
+      fill_in 'Your Message', with: 'Apple peanut butter'
 
       click_on 'Submit'
     end

@@ -9,6 +9,7 @@ gem 'email_validator'
 group :development do
   # Opens outgoing emails in browser
   gem 'letter_opener'
+  gem 'i18n-debug'
 end
 
 group :development, :test do
